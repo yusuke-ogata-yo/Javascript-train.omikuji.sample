@@ -1,0 +1,1 @@
+# Javascript-train.omikuji.sample
