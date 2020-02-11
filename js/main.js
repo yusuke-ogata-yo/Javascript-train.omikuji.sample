@@ -2,9 +2,20 @@
 
 {
   const btn = document.getElementById('btn');
-  const result = ['大吉', '中吉', '凶', '末吉'];
 
   btn.addEventListener('click', ()=> {
-    btn.textContent = result[Math.floor(Math.random() * result.length)];
+    var text = '';
+    const n = Math.random();
+    if (n < 0.05) {
+      text = '大吉'; // 5%
+    } else if (n < 0.2) {
+      text = '中吉'; // 15%
+    } else if (n < 0.5) {
+      text = '末吉'; // 30%
+    } else {
+      text = '凶'; // 50%
+    }
+    
+    btn.textContent = text;
   });
 }
