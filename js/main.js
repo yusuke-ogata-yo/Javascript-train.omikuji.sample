@@ -4,7 +4,7 @@
   const btn = document.getElementById('btn');
 
   btn.addEventListener('click', ()=> {
-    var text = '';
+    let text = '';
     const n = Math.random();
     if (n < 0.05) {
       text = '大吉'; // 5%
